@@ -37,6 +37,7 @@ Thresher:
 Mage Plate:
   - Qualities:
     - normal
+    - magic
     - superior
     Sockets: [0, 3]
 
@@ -54,7 +55,7 @@ x-bases:
     Ethereal: true
     Qualities: [normal, superior]
     Defense: 680
-    Sockets: [0, 3, 4]
+    Sockets: [0, 3, 4, 5]
   - &player-arm-base
     Ethereal: false
     Qualities: [normal, superior]
@@ -62,12 +63,12 @@ x-bases:
   - &merc-wep-base
     Ethereal: true
     Qualities: [normal, superior]
-    Sockets: [4]
+    Sockets: [4, 5]
   - &pally-shield-base
     # Ethereal: true # Uncomment this if you need an ethereal shield base, or flip it to false for non-ethereal
     Qualities: [normal, superior]
     AllResist: 25
-    Sockets: [0, 4]
+    Sockets: [0, 3, 4]
 
 # This ring rule will show all magic, rare, and unique rings
 Ring:
@@ -89,6 +90,8 @@ Giant Thresher:
   - *merc-wep-base
   - Qualities: unique # Stormspire is useful for certain player builds (but not mercs, so we don't want Ethereal!)
     Ethereal: false
+Great Poleaxe:
+   - *merc-arm-base
 
 ### Mercenary Armor Bases
 Dusk Shroud:
@@ -130,6 +133,7 @@ Sacred Armor:
 Archon Plate:
   - *merc-arm-base
   - *player-arm-base
+  - Qualities: magic
 Flail:
   - Qualities: [normal, superior]
     Sockets: [4, 5]
@@ -139,6 +143,7 @@ Crystal Sword:
 Phase Blade:
   - Qualities: [normal, superior]
     Sockets: [5]
+  - Qualities: unique # Azurewrath
 Greater Talons:
   - Qualities: [normal,superior]
     Sockets: [3]
@@ -151,6 +156,9 @@ Feral Claws:
 Matriarchal Javelin:
   - Qualities: [magic, rare]
   - Qualities: unique # Thunderstroke
+Grand Matron Bow:
+  - Qualities: [normal, superior]
+    Sockets: [4]
 
 ### Misc
 Amulet:
@@ -183,6 +191,7 @@ Demonhide Boots:
   - Qualities: rare
 Sharkskin Boots:
   - Qualities: rare
+  - Qualities: unique # Waterwalk
 Mesh Boots:
   - Qualities: rare
 Battle Boots:
@@ -201,10 +210,12 @@ Scarabshell Boots:
   - Qualities: unique
 Boneweave Boots:
   - Qualities: rare
+  - Qualities: unique # Marrowwalk
 Mirrored Boots:
   - Qualities: rare
 Myrmidon Greaves:
   - Qualities: rare
+  - Qualities: unique # Shadow Dancer
 
 ### Exceptional Gloves
 Demonhide Gloves:
@@ -233,6 +244,7 @@ Crusader Gauntlets:
   - Qualities: rare
 Ogre Gauntlets:
   - Qualities: rare
+  - Qualities: unique # Steelrend
 
 ### Helmets
 Bone Visage:
@@ -288,6 +300,7 @@ Akaran Rondache:
   - *pally-shield-base
 Sacred Targe:
   - *pally-shield-base
+  - Qualities: magic
 Sacred Rondache:
   - *pally-shield-base
 Royal Shield:
@@ -430,6 +443,42 @@ Hydra Bow:
   - Qualities: unique
 # Buriza-Do Kyanon
 Ballista:
+  - Qualities: unique
+# Stealskull
+Casque:
+  - Qualities: unique
+# Crown of Thieves
+Grand Crown:
+  - Qualities: unique
+# Bloodfist
+Heavy Gloves:
+  - Qualities: unique
+# Ali Baba
+Tulwar:
+  - Qualities: unique
+# Grandfather
+Colossus Blade:
+  - Qualities: unique
+  - Qualities: [normal, superior]
+    Sockets: [0, 4, 6]
+    Ethereal: true
+# Stormlash
+Scourge:
+  - Qualities: unique
+# Heaven's Light
+Mighty Scepter:
+  - Qualities: unique
+# Rune Master
+Ettin Axe:
+  - Qualities: unique
+# Death Cleaver
+Berserker Axe:
+  - Qualities: unique
+  - Qualities: [normal, superior]
+    Sockets: [4, 5, 6]
+    Ethereal: true
+# Darkforce Spawn
+Bloodlord Skull:
   - Qualities: unique
 
 ### Sets
